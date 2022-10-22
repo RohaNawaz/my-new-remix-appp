@@ -1,6 +1,9 @@
 {
   "private": true,
   "sideEffects": false,
+  "prisma": {
+    "seed" : "node --require esbuild-register prisma/seed.ts"
+  },
   "scripts": {
     "build": "remix build",
     "dev": "remix dev",
@@ -22,7 +25,9 @@
     "@types/bcryptjs": "^2.4.2",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "esbuild": "^3.3.2",
     "eslint": "^8.23.1",
+    "prisma": "^3.14.0",
     "typescript": "^4.7.4"
   },
   "engines": {
